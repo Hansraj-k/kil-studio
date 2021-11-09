@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ @font-face{
+    font-family: "ttufoabrac";
+    src:url('Amsterdam.otf');
+}
+:root{
+    --bg-black-900: #000000;
+    --bg-black-100: #dddddd;
+    --bg-black-50: #eff0f4;
+    --text-black-900: #000000;
+    --text-black-700: #555555;
+    --text-black-600: #666666;
+    --text-black-300: #bbbbbb;
+    --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+    --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
+    --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+
+}
+#ttufoabrac{
+    font-family: ttufoabrac; 
+    font-size: large;
+}
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    cursor: url("c1.png"), auto;
+}
+#pre-loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 999999;
+    background-color: white;
+    transition: all 200ms ease-in-out;
+  }
+.loader {
+    height: 100%;
+    width: 100%;
+    background: url("./images/loader.gif") center/25rem no-repeat fixed;
+  }
+  
+#pre-loader.hide {
+    opacity: 0;
+    pointer-events: none;
+ }
+  
+@media only screen and (max-width: 567px) {
+    .loader {
+      background-size: 20rem;
+    }
+  }
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+ }
+ .logo{
+     margin: 4px;
+ }
+
+nav{
+      flex: 1;
+      text-align: right;
+   }
+nav ul{
+   display: inline-block;
+   list-style-type: none;
+}
+nav ul li{
+   display: inline-block;
+   margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    color: white;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 10px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background:#ff3e6c;
+    color: black;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background  0.5s;
+    box-shadow: var(--outer-shadow);
+}
+.btn:hover{
+    background-color: #fff;
+    color: #ff3e6c;
+}
+.header{
+    box-shadow: 0 0 .9375rem 0 #d2d8d9;
+}
+.header .row{
+    margin-top: 70px;
+}
+.categories{
+    margin-top: 70px;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--container-color);
+  border-radius: .5rem;
+  box-shadow: 0 2px 4px rgba(3,74,40,.15);
+  padding: .75rem;
+
+}
+.col-4 img{
+    width: 100%; 
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 80px;
+    color: white; 
+}
+.title::after{
+    content: '';
+    background: #ff3e6c;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px; 
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-3,.footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.end{
+    text-align: center;
+}
+.a{
+    font-weight: 400;
+    font-size: 45px;
+    color: black;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+.pdp-discount{
+    font-weight: 700;
+    color: #ff3e6c;
+}
+.pdp-discount1{
+    font-weight: 600;
+    font-size: 12px;
+    color: #ff3e6c;
+}
+.pdp-discount2{
+    font-weight: 600;
+    font-size: 12px;
+}
+h4{
+    color: white;
+    font-weight: normal;
+}
+.col-4{
+    font-size: 14px;
+}
+.rating .fa{
+    color: #ff3e6c;
+}
