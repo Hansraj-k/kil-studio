@@ -107,6 +107,9 @@ p{
     line-height: 60px;
     margin: 25px 0;
 }
+img.img {
+    height: 100px;
+}
 .btn{
     display: inline-block;
     background:#ff3e6c;
