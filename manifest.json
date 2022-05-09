@@ -7,14 +7,14 @@
 	"display": "standalone",
 	"icons": [
 		{
-			"src": "images/kil.jpg",
+			"src": "images/kil.png",
 			"sizes": "192x192",
-			"type": "image/jpg"
+			"type": "image/png"
 		},
 		{
-			"src": "images/kil.jpg",
+			"src": "images/kil.png",
 			"sizes": "512x512",
-			"type": "image/jpg"
+			"type": "image/png"
 		}
 	]
 }
