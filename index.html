@@ -96,7 +96,10 @@
 
 
 
-
+<script>
+        "serviceWorker" in window.navigator && window.addEventListener("load",function(){window.navigator.serviceWorker.register("/serviceworker.js").then(function (r) { let serviceWorker; if (r.installing) { serviceWorker = r.installing; } else if (r.waiting) { serviceWorker = r.waiting; } else if (r.active) { serviceWorker = r.active; } if (serviceWorker) { serviceWorker.addEventListener("statechange", function(e) { /*console.log("sw current state", serviceWorker.state);*/ if (e.target.state === "activated") { r.pushManager.subscribe({ userVisibleOnly: true }).then(function(p) { /*console.log(p); console.log("push nortification activated");*/ }, function(error) { console.log(error); });  } }); } }).catch(function(e){console.error("ServiceWorker registration failed: ",e);});});
+        var installPromptEvent;window.addEventListener("beforeinstallprompt",function(e){installPromptEvent = e; document.querySelector("#downloadApp").style.visibility = "visible";/*console.log("beforeinstallprompt Event fired", installPromptEvent);*/document.querySelector("#downloadApp").addEventListener("click",function(){installPromptEvent && installPromptEvent.prompt(); }),e.userChoice.then(function(e){("dismissed"===e.outcome || e === undefined)?(console.log("User cancelled home screen install")):(document.querySelector("#downloadApp").style.visibility = "hidden",console.log("User added to home screen"))})});
+      </script>
 <script src="index.js"></script>
 </body>
 </html>
