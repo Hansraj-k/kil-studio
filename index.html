@@ -97,7 +97,15 @@
 					
 				</ul>
 			</div>
-			<div class="container">
+		</div>
+		<hr>
+		<p class="end"><a href="https://hansrajweb.netlify.app"><img class="img" src="ta.png"></a></p>
+	</div>
+</div>
+
+<div class="footer">
+
+ 		<div class="container">
  			<div class="row">
  				<div class="footer-col-1">
  					<h3>Download Our App</h3>
@@ -134,13 +142,6 @@
  			<p class="copyright">T & C Apply</p>
  		</div>
  	</div>
-		</div>
-		<hr>
-		<p class="end"><a href="https://hansrajweb.netlify.app"><img class="img" src="ta.png"></a></p>
-	</div>
-</div>
-
-
 
 <script>
         "serviceWorker" in window.navigator && window.addEventListener("load",function(){window.navigator.serviceWorker.register("/serviceworker.js").then(function (r) { let serviceWorker; if (r.installing) { serviceWorker = r.installing; } else if (r.waiting) { serviceWorker = r.waiting; } else if (r.active) { serviceWorker = r.active; } if (serviceWorker) { serviceWorker.addEventListener("statechange", function(e) { /*console.log("sw current state", serviceWorker.state);*/ if (e.target.state === "activated") { r.pushManager.subscribe({ userVisibleOnly: true }).then(function(p) { /*console.log(p); console.log("push nortification activated");*/ }, function(error) { console.log(error); });  } }); } }).catch(function(e){console.error("ServiceWorker registration failed: ",e);});});
