@@ -63,25 +63,27 @@
 				<a href="https://www.oracle.com/java/technologies/downloads/#jdk17-windows"><h4>JAVA SE</h4></a>
 			</div>
 		</div>
-		<div class="footer">
+<!--------- footer --------->
+<div class="footer">
 
-	<div class="container">
-		<div class="row">
-			<div class="footer-col-1">
-				<div class="app-logo">
-					<img src="images/kil.jpg" width="300px">
-				</div>
-			</div>
-			<div class="footer-col-3" id="contact">
-			   <h3>Contact Us</h3>
-			   <ul>
-				   <li><a href="mailto:k.i.lstudio18@gmail.com"><i class="fa fa-envelope"></i><p>k.i.lstudio18@gmail.com</p></a></li>
-				   <li><a target="_blank" href="https://forms.gle/P1Kkp3QKagBJxSM69"><i class="fas fa-file-contract"></i><p>Contact Form</p></a></li>
-			   </ul>
-		   </div>
+ 		<div class="container">
+ 			<div class="row">
+ 				<div class="footer-col-2">
+ 					<li id="downloadApp" style="visibility: hidden;">
+ 					<h3>Download Our App</h3>
+ 					<p>Download App for Android and IOS Mobile Phone</p>
+ 					<utton id="" class="app-logo"><img src="images/app-play store.png"></utton></li>
+ 				</div>
+ 				<div class="footer-col-2">
+ 					<div class="app-logo">
+						<img src="images/kil.jpg" width="300px">
+					</div>
+ 				</div>
 			<div class="footer-col-4">
 				<h3>Use Full Links</h3>
 				<ul>
+					<li><a href="mailto:k.i.lstudio18@gmail.com"><i class="fa fa-envelope"></i><p>k.i.lstudio18@gmail.com</p></a></li>
+				   <li><a target="_blank" href="https://forms.gle/P1Kkp3QKagBJxSM69"><i class="fas fa-file-contract"></i><p>Contact Form</p></a></li>
 				   <li><a target="_blank" href="https://www.youtube.com/channel/UC04Wa4f578OxxBf18OWd2RQ"><i class="fab fa-youtube"></i><p>YouTube Channel</p></a></li>
 					
 				</ul>
@@ -89,7 +91,12 @@
 		</div>
 		<hr>
 		<p class="end"><a href="https://hansrajweb.netlify.app"><img class="img" src="ta.png"></a></p>
-	</div>
-</div>
+ 		</div>
+ 	</div>
+
+<script>
+        "serviceWorker" in window.navigator && window.addEventListener("load",function(){window.navigator.serviceWorker.register("/serviceworker.js").then(function (r) { let serviceWorker; if (r.installing) { serviceWorker = r.installing; } else if (r.waiting) { serviceWorker = r.waiting; } else if (r.active) { serviceWorker = r.active; } if (serviceWorker) { serviceWorker.addEventListener("statechange", function(e) { /*console.log("sw current state", serviceWorker.state);*/ if (e.target.state === "activated") { r.pushManager.subscribe({ userVisibleOnly: true }).then(function(p) { /*console.log(p); console.log("push nortification activated");*/ }, function(error) { console.log(error); });  } }); } }).catch(function(e){console.error("ServiceWorker registration failed: ",e);});});
+        var installPromptEvent;window.addEventListener("beforeinstallprompt",function(e){installPromptEvent = e; document.querySelector("#downloadApp").style.visibility = "visible";/*console.log("beforeinstallprompt Event fired", installPromptEvent);*/document.querySelector("#downloadApp").addEventListener("click",function(){installPromptEvent && installPromptEvent.prompt(); }),e.userChoice.then(function(e){("dismissed"===e.outcome || e === undefined)?(console.log("User cancelled home screen install")):(document.querySelector("#downloadApp").style.visibility = "hidden",console.log("User added to home screen"))})});
+      </script>
 </body>
 </html>
