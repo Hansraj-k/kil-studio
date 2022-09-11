@@ -82,6 +82,9 @@ a{
 p{
     color: white;
 }
+.footer-col-2{
+  cursor: pointer;
+}
 .container{
     max-width: 1300px;
     margin: auto;
