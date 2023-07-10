@@ -113,16 +113,7 @@ p{
 .img {
     height: 100px;
 }
-.btn{
-    display: inline-block;
-    background:#ff3e6c;
-    color: black;
-    padding: 8px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
-    transition: background  0.5s;
-    box-shadow: var(--outer-shadow);
-}
+
 .btn:hover{
     background-color: #fff;
     color: #ff3e6c;
