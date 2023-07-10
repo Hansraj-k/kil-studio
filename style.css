@@ -453,7 +453,7 @@ root {
     font-weight: 600; }
     .btn.btn-primary:hover, .btn.btn-primary:focus {
       border-color: #a57f48 !important;
-      background: #a57f48 !important; }
+      background: white !important; }
 
 .contactForm .label {
   color: #fff;
