@@ -8144,7 +8144,7 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #bc9864; }
+  color: #white; }
   a:hover, a:focus {
     text-decoration: none !important;
     outline: none !important;
@@ -8159,7 +8159,7 @@ h1, h2, h3, h4, h5,
   color: #000; }
 
 .bg-primary {
-  background: #bc9864 !important; }
+  background: #white !important; }
 
 .ftco-section {
   padding: 7em 0; }
@@ -8203,7 +8203,7 @@ h1, h2, h3, h4, h5,
     /* Firefox 18- */
     color: rgba(255, 255, 255, 0.3) !important; }
   .form-control:focus, .form-control:active {
-    border-color: #bc9864 !important;
+    border-color: white !important;
     background: rgba(255, 255, 255, 0.1); }
 
 textarea.form-control {
@@ -8227,7 +8227,7 @@ textarea.form-control {
     margin-bottom: 0; }
     .dbox p span {
       font-weight: 500;
-      color: #bc9864;
+      color: white;
       display: block; }
     .dbox p a {
       color: rgba(255, 255, 255, 0.8); }
@@ -8235,7 +8235,7 @@ textarea.form-control {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #bc9864;
+    background: white;
     margin: 0 auto;
     margin-bottom: 20px; }
     .dbox .icon span {
@@ -8270,8 +8270,8 @@ textarea.form-control {
     -moz-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.22) !important;
     box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.22) !important; }
   .btn.btn-primary {
-    background: #bc9864 !important;
-    border-color: #bc9864 !important;
+    background: white !important;
+    border-color: white !important;
     color: #000;
     text-transform: uppercase;
     font-weight: 600; }
