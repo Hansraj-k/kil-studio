@@ -437,11 +437,13 @@ root {
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 .btn.btn-primary {
-    background: #bc9864 !important;
+    background: white !important;
     border-color: #bc9864 !important;
     color: #000;
     text-transform: uppercase;
-    font-weight: 600; }
+    font-weight: 600;
+    border-radius: 12px;
+}
     .btn.btn-primary:hover, .btn.btn-primary:focus {
       border-color: #a57f48 !important;
       background: white !important; }
