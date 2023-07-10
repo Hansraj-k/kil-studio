@@ -445,3 +445,54 @@ root {
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+.btn.btn-primary {
+    background: #bc9864 !important;
+    border-color: #bc9864 !important;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600; }
+    .btn.btn-primary:hover, .btn.btn-primary:focus {
+      border-color: #a57f48 !important;
+      background: #a57f48 !important; }
+
+.contactForm .label {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600; }
+
+.contactForm .form-control {
+  border: none; }
+
+.contactForm .btn {
+  width: 100%;
+  display: block; }
+
+#contactForm .error {
+  color: #f65c78;
+  font-size: 12px; }
+
+#contactForm .form-control {
+  font-size: 16px; }
+
+#message {
+  resize: vertical; }
+
+#form-message-warning, #form-message-success {
+  display: none; }
+
+#form-message-warning {
+  color: red; }
+
+#form-message-success {
+  color: #28a745;
+  font-size: 20px;
+  font-weight: 700; }
+
+.submitting {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  display: none;
+  font-size: 16px;
+  font-weight: 500; }
