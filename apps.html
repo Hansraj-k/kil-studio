@@ -73,14 +73,54 @@
  				<div class="footer-col-2">
  					<li id="downloadApp" style="visibility: hidden;">
  					<h3>Download Our App</h3>
- 					<p>Download App for Android and IOS Mobile Phone</p>
- 					<utton id="" class="app-logo"><img src="images/app-play store.png"></utton></li>
+ 					<p>Download App on Android</p>
+ 					<utton id="" class="app-logo"><img src="images/app-play store .png"></utton></li>
  				</div>
  				<div class="footer-col-2">
  					<div class="app-logo">
 						<img src="images/kil.jpg" width="300px">
 					</div>
  				</div>
+	<div class="container-contact100">
+<div class="wrap-contact100">
+<form class="contact100-form validate-form" id="contact-form">
+<span class="contact100-form-title">
+Contact Us
+</span>
+<div class="wrap-input100 validate-input" data-validate="Please enter your name">
+<input class="input100" type="text" id="name" placeholder="Full Name" required >
+<span class="focus-input100"></span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Please enter email: abc@def.ghi">
+<input class="input100" type="email" name="email" placeholder="Email" id="email" required >
+<span class="focus-input100" ></span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Please enter Phone Number: 123456789">
+<input class="input100" type="number" name="hi" placeholder="Phone Number" id="number" required >
+<span class="focus-input100" ></span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Please enter the subject" required >
+<input class="input100" type="text" subject" placeholder="Subject" id="subject">
+<span class="focus-input100"></span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Please enter your message" required >
+<textarea class="input100" name="message" placeholder="Your Message" id="message"></textarea>
+<span class="focus-input100"></span>
+</div>
+<div class="container-contact100-form-btn">
+<button class="contact100-form-btn" name"submit" type"submit">
+Send Email
+</button>
+</div>
+</form>
+</div>
+</div>
+<div id="dropDownSelect1"></div>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script src="New Text Document.js">
+</script>
 			<div class="footer-col-4">
 				<h3>Use Full Links</h3>
 				<ul>
@@ -100,5 +140,11 @@
         "serviceWorker" in window.navigator && window.addEventListener("load",function(){window.navigator.serviceWorker.register("/serviceworker.js").then(function (r) { let serviceWorker; if (r.installing) { serviceWorker = r.installing; } else if (r.waiting) { serviceWorker = r.waiting; } else if (r.active) { serviceWorker = r.active; } if (serviceWorker) { serviceWorker.addEventListener("statechange", function(e) { /*console.log("sw current state", serviceWorker.state);*/ if (e.target.state === "activated") { r.pushManager.subscribe({ userVisibleOnly: true }).then(function(p) { /*console.log(p); console.log("push nortification activated");*/ }, function(error) { console.log(error); });  } }); } }).catch(function(e){console.error("ServiceWorker registration failed: ",e);});});
         var installPromptEvent;window.addEventListener("beforeinstallprompt",function(e){installPromptEvent = e; document.querySelector("#downloadApp").style.visibility = "visible";/*console.log("beforeinstallprompt Event fired", installPromptEvent);*/document.querySelector("#downloadApp").addEventListener("click",function(){installPromptEvent && installPromptEvent.prompt(); }),e.userChoice.then(function(e){("dismissed"===e.outcome || e === undefined)?(console.log("User cancelled home screen install")):(document.querySelector("#downloadApp").style.visibility = "hidden",console.log("User added to home screen"))})});
       </script>
+<script src="index.js"></script>
+<script src="jquery-3.2.1.min.js"></script>
+
+<script src="select2.min.js"></script>
+
+<script src="main.js"></script>
 </body>
 </html>
