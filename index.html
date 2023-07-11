@@ -13,6 +13,10 @@
 	 <link rel="manifest" href="manifest.json">
 	 <link rel="apple-touch-icon" href="images/kil.png">
 	 <link rel="manifest" href="manifest.json">
+	<link rel="stylesheet" type="text/css" href="material-design-iconic-font.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="main.css">
 	<!-- ios support -->
   	<link rel="apple-touch-icon" href="logo.png">
   	<meta name="apple-mobile-web-app-status-bar" content="#000000">
@@ -83,7 +87,44 @@
 						<img src="images/kil.jpg" width="300px">
 					</div>
  				</div>
-	
+	<div class="container-contact100">
+<div class="wrap-contact100">
+<form class="contact100-form validate-form" id="contact-form">
+<span class="contact100-form-title">
+Contact Us
+</span>
+<div class="wrap-input100 validate-input" data-validate="Please enter your name">
+<input class="input100" type="text" id="name" placeholder="Full Name" required >
+<span class="focus-input100"></span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Please enter email: abc@def.ghi">
+<input class="input100" type="email" name="email" placeholder="Email" id="email" required >
+<span class="focus-input100" ></span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Please enter Phone Number: 123456789">
+<input class="input100" type="number" name="hi" placeholder="Phone Number" id="number" required >
+<span class="focus-input100" ></span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Please enter the subject" required >
+<input class="input100" type="text" subject" placeholder="Subject" id="subject">
+<span class="focus-input100"></span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Please enter your message" required >
+<textarea class="input100" name="message" placeholder="Your Message" id="message"></textarea>
+<span class="focus-input100"></span>
+</div>
+<div class="container-contact100-form-btn">
+<button class="contact100-form-btn" name"submit" type"submit">
+Send Email
+</button>
+</div>
+</form>
+<div class="contact100-more">
+Contact our 24/7 call center: <span class="contact100-more-highlight">+001 345 6889</span>
+</div>
+</div>
+</div>
+<div id="dropDownSelect1"></div>
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
@@ -109,5 +150,10 @@
         var installPromptEvent;window.addEventListener("beforeinstallprompt",function(e){installPromptEvent = e; document.querySelector("#downloadApp").style.visibility = "visible";/*console.log("beforeinstallprompt Event fired", installPromptEvent);*/document.querySelector("#downloadApp").addEventListener("click",function(){installPromptEvent && installPromptEvent.prompt(); }),e.userChoice.then(function(e){("dismissed"===e.outcome || e === undefined)?(console.log("User cancelled home screen install")):(document.querySelector("#downloadApp").style.visibility = "hidden",console.log("User added to home screen"))})});
       </script>
 <script src="index.js"></script>
+<script src="jquery-3.2.1.min.js"></script>
+
+<script src="select2.min.js"></script>
+
+<script src="main.js"></script>
 </body>
 </html>
