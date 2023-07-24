@@ -4,11 +4,11 @@
     box-sizing: border-box;
  }
  @font-face{
-    font-family: "ananias";
-    src:url('LuckiestGuy-Regular.tff');
+    font-family: "blank";
+    src:url('Blanka-Regular.otf');
 }
 #ananias{
-    font-family: ananias;
+    font-family: blank;
 }
 :root{
     --bg-black-900: #000000;
