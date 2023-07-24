@@ -4,8 +4,11 @@
     box-sizing: border-box;
  }
  @font-face{
-    font-family: "ttufoabrac";
-    src:url('Amsterdam.otf');
+    font-family: "ananias";
+    src:url('ananias.otf');
+}
+#ananias{
+    font-family: ananias;
 }
 :root{
     --bg-black-900: #000000;
