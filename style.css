@@ -165,7 +165,7 @@ p{
 }
 .title::after{
     content: '';
-    background: #ff3e6c;
+    background: #bd59d4;
     width: 80px;
     height: 5px;
     border-radius: 5px;
@@ -233,12 +233,12 @@ ul{
 }
 .pdp-discount{
     font-weight: 700;
-    color: #ff3e6c;
+    color: #bd59d4;
 }
 .pdp-discount1{
     font-weight: 600;
     font-size: 12px;
-    color: #ff3e6c;
+    color: #bd59d4;
 }
 .pdp-discount2{
     font-weight: 600;
@@ -252,7 +252,7 @@ h4{
     font-size: 14px;
 }
 .rating .fa{
-    color: #ff3e6c;
+    color: #bd59d4;
 }
 
 .contactForm .label {
