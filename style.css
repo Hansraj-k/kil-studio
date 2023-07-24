@@ -165,7 +165,7 @@ p{
     margin: 0 auto 80px;
     position: relative;
     line-height: 80px;
-    color: white; 
+    color: #937b4f; 
 }
 .title::after{
     content: '';
